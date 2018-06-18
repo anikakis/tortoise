@@ -14,7 +14,168 @@ h4 {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+/*Header Section*/
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: cadetblue;
+  height: 3rem;
+  /*margin-top: 1rem;*/
+  /*padding-left: 2rem;*/
+}
+
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+header img {
+  height: 1.5rem;
+
+}
+
+header span {
+  padding-left: 1rem;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+header li {
+  padding-left: 2rem;
+}
+
+header .menu {
+  display: none;
+}
+
+/*Main Section*/
+
+.main {
+  height: 31rem;
+  width: 100%;
+  background-image: url(../images/glasses-bg.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+}
+
+.main .slogan {
+  display: flex;
+  float: right;
+  background-color: white;
+  /*margin-top: 10rem;*/
+  padding: 0 2rem;
+  position: relative;
+  top: 10rem;
+  right: -2rem;
+  /*padding-right: 2rem;*/
+}
+
+.main .slogan h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 3rem;
+}
+
+/*Services Section*/
+
+.featured .container {
+  /*border: 1px solid green;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.featured .service {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 8rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.featured .image-content {
+  /*border: 1px solid blue;*/
+}
+
+.featured p {
+  /*border: 1px solid grey;*/
+}
+
+#paper {
+  width: 3.5rem;
+}
+
+#ruler,
+#truck {
+  width: 5rem;
+}
+
+/*Description Section*/
+
+.description .container {
+  display: flex;
+  justify-content: center;
+}
+
+.description .box {
+  /*border: 1px solid red;*/
+  width: 35%;
+  padding-right: 5%;
+  padding-bottom: 5rem;
+}
+
+.description .title {
+  font-size: 1rem;
+  background-color: cadetblue;
+  color: white;
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+}
+
+.description p {
+  padding-top: 1rem;
+}
+
+/*Footer Section*/
+
+.footer .container {
+  /*border: 1px solid blue;*/
+  /*width: 964px;*/
+  position: relative;
+  /*left: -2rem;*/
+  background-color: azure;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4rem 4rem 4rem 0;
+}
+
+.footer img {
+  /*border: 1px solid red;*/
+  height: 1.5rem;
+  padding: 0 1rem 0 4rem;
 }
