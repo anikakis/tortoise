@@ -33,8 +33,6 @@ header .container {
   color: white;
   background-color: cadetblue;
   height: 3rem;
-  /*margin-top: 1rem;*/
-  /*padding-left: 2rem;*/
 }
 
 header .logo {
@@ -46,7 +44,6 @@ header .logo {
 
 header img {
   height: 1.5rem;
-
 }
 
 header span {
@@ -64,10 +61,6 @@ header li {
   padding-left: 2rem;
 }
 
-header .menu {
-  display: none;
-}
-
 /*Main Section*/
 
 .main {
@@ -83,12 +76,10 @@ header .menu {
   display: flex;
   float: right;
   background-color: white;
-  /*margin-top: 10rem;*/
   padding: 0 2rem;
   position: relative;
   top: 10rem;
   right: -2rem;
-  /*padding-right: 2rem;*/
 }
 
 .main .slogan h1 {
@@ -100,7 +91,6 @@ header .menu {
 /*Services Section*/
 
 .featured .container {
-  /*border: 1px solid green;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,21 +98,12 @@ header .menu {
 }
 
 .featured .service {
-  /*border: 1px solid red;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 8rem;
   text-align: center;
   padding: 0 3rem;
-}
-
-.featured .image-content {
-  /*border: 1px solid blue;*/
-}
-
-.featured p {
-  /*border: 1px solid grey;*/
 }
 
 #paper {
@@ -142,7 +123,6 @@ header .menu {
 }
 
 .description .box {
-  /*border: 1px solid red;*/
   width: 35%;
   padding-right: 5%;
   padding-bottom: 5rem;
@@ -163,10 +143,7 @@ header .menu {
 /*Footer Section*/
 
 .footer .container {
-  /*border: 1px solid blue;*/
-  /*width: 964px;*/
   position: relative;
-  /*left: -2rem;*/
   background-color: azure;
   display: flex;
   justify-content: flex-start;
@@ -175,7 +152,176 @@ header .menu {
 }
 
 .footer img {
-  /*border: 1px solid red;*/
   height: 1.5rem;
   padding: 0 1rem 0 4rem;
+}
+
+/*Desktop Media Query*/
+
+@media only screen and (min-width: 751px) {
+
+  /*Header Section*/
+
+  header .menu {
+    display: none;
+  }
+
+}
+
+
+/*Tablet Media Query*/
+
+@media only screen and (max-width: 1024px) {
+
+  /*Header Section*/
+
+  header .container {
+    max-width: 100%;
+  }
+
+  /*Main Section*/
+
+  .main {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  /*Slogan Subsection*/
+
+  .main .slogan {
+    position: relative;
+    top: 5rem;
+    right: 2rem;
+    /*padding-right: 2rem;*/
+  }
+
+  .main .slogan h1 {
+    font-size: 1.33rem;
+    padding: 1.75rem 4rem;
+  }
+
+}
+
+/*Landscape Mobile Query*/
+
+@media only screen and (max-width: 750px) {
+
+  /*Header Section*/
+
+  header .navbar {
+    display: none;
+  }
+
+  /*Main Section*/
+
+  .main {
+    background-position: 20%
+  }
+
+  /*Slogan Subsection*/
+
+  .main .slogan {
+    position: relative;
+    top: 12rem;
+  }
+
+  .main .slogan h1 {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+}
+
+/*Portrait Mobile Screen*/
+
+@media only screen and (max-width: 470px) {
+
+  /*Header Section*/
+
+  header span {
+    display: none;
+  }
+
+  /*Main Section*/
+
+  .main {
+    height: 17rem;
+  }
+
+  /*Slogan Subsection*/
+
+  .main .slogan {
+    position: relative;
+    right: 0;
+    top: 9rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .main .slogan h1 {
+    font-size: 1rem;
+    padding: 0.75rem 0;
+  }
+
+  /*Services Section*/
+
+  .featured .container {
+    flex-direction: column;
+    padding: 2.77rem 0 3.77rem 0;
+  }
+
+  .featured .service {
+    font-size: 0.77rem;
+    height: 7rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .featured p {
+    margin-top: 1rem;
+  }
+
+  /*Description Section*/
+
+  .description .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .description p {
+    font-size: 0.77rem;
+    width: 90%;
+
+  }
+
+  /*Footer Section*/
+
+  .footer .container {
+    justify-content: center;
+    padding: 4rem 0;
+  }
+
+  .footer img {
+    padding: 0;
+  }
+
+  .footer span {
+    display: none;
+  }
+
 }
